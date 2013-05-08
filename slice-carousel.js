@@ -122,7 +122,8 @@ http://www.opensource.org/licenses/mit-license.php
 			var sections = ul.find( 'li' ),
 					numImages = sections.length,
 					carouselImages = [],
-					currentImage = 0;
+					currentImage = 0,
+					scope = this;
 
 			for ( var i = sections.length - 1, j = 0; i >= 0; i--, j++ ) {
 
@@ -131,8 +132,6 @@ http://www.opensource.org/licenses/mit-license.php
 				carouselImages[ j ].css( 'margin-right', ( -( numImages - 1 - j ) * scope.sliceWidth ) + 'px' );
 
 			}
-			
-			var scope = this;
 
 			// make sure images are loaded before querying their dimensions
 			element.find( 'ul > li > img' ).load( function () {
