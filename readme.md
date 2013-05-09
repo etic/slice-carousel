@@ -11,7 +11,7 @@ Include the following lines in the `<head>` area of your document:
 <script src="https://raw.github.com/etic/slice-carousel/master/slice-carousel.js"></script>
 ```
 
-A slide carousel widget is built for each `div.slide-carousel` element with `img` children in the DOM.
+A slice carousel widget is built for each `div.slide-carousel` element with `img` children in the DOM.
 
 ```html
 <div class="slice-carousel">
@@ -20,6 +20,8 @@ A slide carousel widget is built for each `div.slide-carousel` element with `img
 	<img src="my-image-03.jpg"></img>
 </div>
 ```
+
+Widgets are automatically built upon document loading.  To build widgets at a later time, add the `slice-carousel` class to the desired elements through javascript and call `$(myElement).sliceCarousel()`.
 
 ### Options
 
