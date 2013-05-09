@@ -6,14 +6,14 @@ A jQuery plugin for viewing a series of images as a sequence of animated inline 
 
 Include the following lines in the `<head>` area of your document:
 
-```
+```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://raw.github.com/etic/slice-carousel/master/slice-carousel.js"></script>
 ```
 
 A slide carousel widget is built for each `div.slide-carousel` element with `img` children in the DOM.
 
-```
+```html
 <div class="slice-carousel">
 	<img src="my-image-01.jpg"></img>
 	<img src="my-image-02.jpg"></img>
@@ -32,7 +32,7 @@ A slide carousel widget is built for each `div.slide-carousel` element with `img
 
 Example:
 
-```
+```html
 <div class="slice-carousel" sliceWidth="20" alphaSize="8">
 	...
 </div>
@@ -42,7 +42,7 @@ Example:
 
 An event is fired every time the currently active image changes.  The index of this image can be retrieved with the `carouselImageChange` event.
 
-```
+```js
 $( 'div.slice-carousel' ).on( 'carouselImageChange', function ( e, index) {
 	alert( 'Image ' + index + ' selected!' );
 } );
