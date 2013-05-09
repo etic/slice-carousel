@@ -43,7 +43,7 @@ Example:
 An event is fired every time the currently active image changes.  The index of this image can be retrieved with the `carouselImageChange` event.
 
 ```js
-$( 'div.slice-carousel' ).on( 'carouselImageChange', function ( e, index) {
+$( 'div.slice-carousel' ).on( 'carouselImageChange', function ( e, index ) {
 	alert( 'Image ' + index + ' selected!' );
 } );
 ```
